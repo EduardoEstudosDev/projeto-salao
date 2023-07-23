@@ -1,0 +1,151 @@
+/* estilos gerais */
+* {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  background-color: #e7e7e7;
+  gap: 50px;
+  margin-top: 60px;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-self: center;
+  padding: 0px 100px;
+  max-width: 1000px;
+}
+
+li,
+a {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  display: grid;
+  gap: 60px;
+  justify-items: center;
+}
+header h1{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+h1 {
+  font-size: 2rem;
+  text-align: end;
+}
+h1, h2, h3, p{
+  margin: 0rem;
+  padding: 0rem;
+}
+
+/* estilos específicos */
+a {
+  background-color: #fff;
+  border-radius: 4px;
+  color: #000;
+  padding: 15px 30px;
+  text-transform: uppercase;
+}
+.navbar a:hover {
+  outline: 4px solid rgb(219, 17, 238);
+}
+
+.apres {
+  background-color: #fff;
+  display: grid;
+  gap: 20px;
+  align-content: center;
+  justify-items: end;
+  padding: 40px;
+  position: relative;
+}
+.apres::after {
+  content: "";
+  width: 65px;
+  height: 4px;
+  background-color: rgb(219, 17, 238);
+  position: absolute;
+  top: 2rem;
+  right: -2rem;
+}
+
+.apres p {
+  font-size: 1.3rem;
+  text-align: end;
+}
+.apres a {
+  background-color: rgb(219, 17, 238);
+  border-radius: 4px;
+  color: #fff;
+  padding: 15px 30px;
+  text-transform: uppercase;
+}
+.apres a:hover {
+  background-color: rgb(150, 2, 164);
+}
+
+.conteiner-vantagens {
+  display: grid;
+  background-image: url("./img/onda.svg");
+}
+
+.vantagens {
+  align-self: center;
+  color: #bbb;
+  font-size: 64px;
+  padding: 30px;
+  text-align: end;
+  text-transform: uppercase;
+}
+.conteiner-descricao {
+  display: grid;
+  background-color: #fff;
+  /* gap: 20px 20px; */
+  padding: 50px;
+}
+.descricao {
+  background-color: #fff;
+  border-left: 5px solid transparent;
+  display: grid;
+  grid-template-rows: 1fr;
+  align-items: start;
+  gap: 0px 10px;
+  padding: 20px;
+}
+.descricao:nth-child(odd) {
+  background-color: #e7e7e7;
+}
+.descricao:hover {
+  border-left: 5px solid rgb(219, 17, 238);
+  transition-duration: 1s;
+}
+
+.descricao p {
+  grid-column: 2;
+}
+.descricao img{
+  height: 3.5rem;
+}
+.descricao h3{
+  align-self: center;
+}
+footer{
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 40px;
+}
